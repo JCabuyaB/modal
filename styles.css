@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    background: url(./banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    height: 100vh;
+    background: rgba(59, 29, 29, 0.5);
+}
+
+.hero__title{
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.hero__btn{
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background: crimson;
+    color: #fff;
+    transition: .3s;
+}
+.hero__btn:hover{
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, .9);
+}
+
+.modal-container{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .5);
+    display: none;
+    place-content: center;
+}
+
+.show-modal{
+    display: grid;
+}
+
+.modal-content{
+    position: relative;
+    padding: 40px;
+    background: #f3f3f3;
+    width: 600px;
+    height: 300px;
+    border-radius: 5px;
+    transition: .3s;
+    transform: scale(0);
+}
+
+.modal-increase{
+    transform: scale(1);
+}
+
+
+.modal-content__title{
+    font-size: 25px;
+}
+.modal-content__text{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.modal__button{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border-radius: 15px;
+    border: 3px solid rgb(107, 99, 99);
+    font-size: 20px;
+    font-weight: bold;
+}
